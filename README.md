@@ -5,8 +5,16 @@
 
  Rest API Get List of product Stock 
  
-1) GET : http://localhost:8000/api/v1/inventory/stock
-2) POST: http://localhost:8000/api/v1/inventory/transaction
+1)Create Stock in database. Change the product,quantity, price and run this api for create stock 
+POST : http://localhost:8000/api/v1/inventory/stock{
+  {
+    "product":"Iphone",
+    "quantity":"20",
+    "price":29000
+  }
+2) Get List of product and stock
+ GET : http://localhost:8000/api/v1/inventory/stock
+3) POST: http://localhost:8000/api/v1/inventory/transaction
     Body:
     {
     "product":"Apple Phone",
