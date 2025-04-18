@@ -1,5 +1,8 @@
  npm -v             // 10.9.0
  node -v         // check the node version my node version v18.17.1
+ git clone https://github.com/akhileshtenguria/product_inventory.git
+ cd product_inventory
+ git checkout master
  npm install   // for install node_modules
  npm start    // for run this project
 
