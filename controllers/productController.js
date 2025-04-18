@@ -83,6 +83,9 @@ const addTransaction = async (req, res) => {
         return res.status(400).json({success: false, error: 'Missing required fields' });
     }
     const productData = await productsModel.findOne({ product: product });
+    if(!productData){
+        return res.status(400).json({success: false, error: 'This Product is not available' });
+    }
     let productStock = Number(productData['quantity']);
      const qantity = Number(quantity);
     switch (type) {
